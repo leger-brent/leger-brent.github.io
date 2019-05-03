@@ -5,24 +5,34 @@
 <h2>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</h2>
 
 <h3>Explanation</h3>
-<p>The JavaScript can't be seen on this page. It all prints to the console.
-    To get to the console, right click on this webpage on Chrome or Firefox and click "Inspect" or "Inspect Element."
-    <br> You should see the breakdown of the page. Dropping the down arrow on the "Script" element will reveal the JavaScript portion.
+<p>
+The JavaScript can't be seen on this page. It all prints to the console. The explanation is for Chrome web browser.
+    <ol>
+        <li> Right click on this page and click "View page source." This will open new tab with the JavaScript.</li>
+        <li> Under the script tag, you can find the Javascript. I've commented out each step.</li>
+            <ul>
+                <li> First I start with some variables, then I run through a loop containing a conditional statement and print the results to console. Next I create an array and a function and perform some modifications to the array before printing it to the console.</li>
+            </ul>
+        <li> Once you take a look at the JavaScript, close the tab and come back here to this web page.</li>
+        <li> Right click on this page again and click "Inspect." This will open the console.</li>
+        <li> Click on the console tab to see the output that was printed to the console.</li>
+    </ol>
 </p>
 
 <script>
-    //create variables for Hero names
+    //This creates three variables
     let hero1 = "Vahn",
         hero2 = "Noa",
         hero3 = "Gala";
 
-    //create variable for loop and placeholder for
+    //This creates generic variables for the loop
     let i,
         k;
 
-    //loop through an if-else statement and print out the 3 Hero names
+    //This loop will loop through. Each loop will increment i until i is not longer less than 3.
     for (i = 0; i < 3; i++)
     {
+        //This is a conditional statement that will set k to some value depending on the value of i.
         if (i === 0) {
             k = hero1;
         }
@@ -34,21 +44,22 @@
         {
             k = hero3;
         }
+        //Each loop will print the value of the k variable
         console.log(`The name of this hero is ${k}.`);
     }
     console.log('\n');
 
-    //create Array of special character names
+    //create Array of three strings
     let hero = ["Meta", "Terra", "Ozma"];
 
-    //loop through and print special character names
+    //loop through and prints the strings from the array
     for (i = 0; i < 3; i++)
     {
         console.log(`The name of this hero is ${hero[i]}.`);
     }
     console.log('\n');
 
-    //add elements to array
+    //Array function that adds more elements to the array
     hero.push("Vahn","Noa","Gala");
 
     //function that returns the length of an array parameter passed to it.
@@ -57,9 +68,11 @@
         return array.length
     }
 
-    let num = howMany(hero);
+    //set i equal to the length value returned from the function
+    i = howMany(hero);
 
-    console.log(`There are ${num} elements in the Hero Array.`)
+    //print the value of i
+    console.log(`There are ${i} elements in the Hero Array.`)
 </script>
 
 </body>
