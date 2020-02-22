@@ -28,7 +28,7 @@ let hero = ["Meta", "Terra", "Ozma"];
 
 //loop through and prints the strings from the array
 for (i = 0; i < 3; i++) {
-  console.log("The name of this hero is " + hero + ".");
+  console.log("The name of this hero is " + hero[i] + ".");
 }
 console.log("\n");
 
