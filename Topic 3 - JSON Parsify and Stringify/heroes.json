@@ -1,0 +1,26 @@
+[
+{"Name":"Vahn"
+, "Level": 15
+, "HP": 700
+, "MP": 90
+, "ATK": 50
+, "DEF": 50
+, "SPD": 50
+, "Ra-Seru" : {
+	"Name":"Meta"
+	,"Level": 3
+	}
+}
+
+,{"Name":"Noa"
+, "Level": 12
+, "HP": 550
+, "MP": 75
+, "ATK": 30
+, "DEF": 30
+, "SPD": 70
+, "Ra-Seru" : {
+	"Name":"Terra"
+	,"Level": 2
+	}
+}]
