@@ -41,7 +41,6 @@ var parsed = JSON.parse(jsonInput);
 
 //Now that the object is parsed, I can use a function. I use the push function to add another hero to the array.
 parsed.push(
-[
    {
       "name":"Gala",
       "level":10,
@@ -57,7 +56,6 @@ parsed.push(
          }
       ]
    }
-   ]
    )
 
 //I can also manipulate a specific data field by referencing the index of the object in the array and using the dot notation on the field. 
