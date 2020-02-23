@@ -21,7 +21,10 @@ class Person {
   }
   //method for the object
   greet() {
-    console.log("Hi, my name is "" + this.name + ".");
+    console.log("Hi, my name is " + this.name + ".");
+  }
+  action() {
+	console.log(this.name + " smiles at you.");
   }
 }
 
@@ -36,18 +39,27 @@ class Hero extends Person {
     this.hp = hp;
     this.mp = mp;
   }
+  
+  //Overloading the super method
+  action(){
+	console.log(this.name + " observes you.");
+  }
 }
 
 //instantiate a new Person object
 var girl = new Person("Mei");
 // calls the function of the class
 girl.greet();
+// calls another function of the class
+girl.action();
 
 //instantiate a new Hero object
 var hero1 = new Hero("Vahn", 10, 10, 50, 15);
 //method validating access to parent class
 hero1.greet();
-//call to exteded method of the new class
+//method showing overloaded function performs a different action
+hero1.action();
+//call to field from the subclass
 console.log(hero1.attack);
   </pre>
 
