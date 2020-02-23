@@ -1,26 +1,32 @@
 [
-{"Name":"Vahn"
-, "Level": 15
-, "HP": 700
-, "MP": 90
-, "ATK": 50
-, "DEF": 50
-, "SPD": 50
-, "Ra-Seru" : {
-	"Name":"Meta"
-	,"Level": 3
-	}
-}
-
-,{"Name":"Noa"
-, "Level": 12
-, "HP": 550
-, "MP": 75
-, "ATK": 30
-, "DEF": 30
-, "SPD": 70
-, "Ra-Seru" : {
-	"Name":"Terra"
-	,"Level": 2
-	}
-}]
+   {
+      "name":"Vahn",
+      "level":15,
+      "hp":700,
+      "mp":90,
+      "atk":50,
+      "def":50,
+      "spd":50,
+      "raSeru":[
+         {
+            "name":"Meta",
+            "level":3
+         }
+      ]
+   },
+   {
+      "name":"Noa",
+      "level":12,
+      "hp":550,
+      "mp":75,
+      "atk":30,
+      "def":30,
+      "spd":70,
+      "raSeru":[
+         {
+            "name":"Terra",
+            "level":2
+         }
+      ]
+   }
+]
