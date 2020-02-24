@@ -31,7 +31,7 @@ var jsonInput =
          }
       ]
    }
-]`
+]`;
 
 //I print the simulated input to the log to verify that it actually a string file.
 console.log(jsonInput);
@@ -56,7 +56,7 @@ parsed.push(
          }
       ]
    }
-   )
+   );
 
 //I can also manipulate a specific data field by referencing the index of the object in the array and using the dot notation on the field. 
 //Here I update the hp for my first hero.
