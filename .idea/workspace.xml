@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cff3abe-b979-44a2-87d9-86fac7e74393" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Topic 6 - DOM/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Topic 6 - DOM/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/49ers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/chiefs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 6 - DOM/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 6 - DOM/dom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/ccs3js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +31,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YEhfnhaJOLaiPrH4ftW9dov40B" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -62,12 +69,15 @@
       <option name="presentableId" value="Default" />
       <updated>1582513766758</updated>
       <workItem from="1582513768697" duration="9813000" />
-      <workItem from="1582567805144" duration="3453000" />
+      <workItem from="1582567805144" duration="10798000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582525078398">
