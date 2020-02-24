@@ -4,7 +4,13 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cff3abe-b979-44a2-87d9-86fac7e74393" name="Default Changelist" comment="" />
+    <list default="true" id="7cff3abe-b979-44a2-87d9-86fac7e74393" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Topic 6 - DOM/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 6 - DOM/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 6 - DOM/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 6 - DOM/dom.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582513766758</updated>
-      <workItem from="1582513768697" duration="9117000" />
+      <workItem from="1582513768697" duration="9813000" />
+      <workItem from="1582567805144" duration="3453000" />
     </task>
     <servers />
   </component>
