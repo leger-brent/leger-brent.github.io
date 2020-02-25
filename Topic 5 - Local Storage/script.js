@@ -19,10 +19,10 @@ window.onload = function () {
     document.getElementById("btn").addEventListener("click", function () {
 
         let hName = document.getElementById("hname").value;
-        let hHp = document.getElementById("hp");
-        let hAtk = document.getElementById("atk");
-        let hDef = document.getElementById("def");
-        let hSpd = document.getElementById("spd");
+        let hHp = document.getElementById("hp").value;
+        let hAtk = document.getElementById("atk").value;
+        let hDef = document.getElementById("def").value;
+        let hSpd = document.getElementById("spd").value;
 
         //verify there is good data to work with
         if (hName && hHp && hAtk && hDef && hSpd) {
