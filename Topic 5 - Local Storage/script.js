@@ -12,35 +12,30 @@ class Hero {
 //stops this section from running until there is data available
 window.onload = function () {
     //brings data over from the form on the html file.
-    const nameKey = document.getElementById("hname");
-    const hpKey = document.getElementById("hp");
-    const atkKey = document.getElementById("atk");
-    const defKey = document.getElementById("def");
-    const spdKey = document.getElementById("spd");
-    const lsOutput = document.getElementById("output");
+    let nameKey = document.getElementById("hname").value;
+    let hpKey = document.getElementById("hp").value;
+    let atkKey = document.getElementById("atk").value;
+    let defKey = document.getElementById("def").value;
+    let spdKey = document.getElementById("spd").value;
+    let lsOutput = document.getElementById("output").value;
 
     //starts a function whenever the submit button is clicked
     document.getElementById("btn").addEventListener("click", function () {
 
         //pull data into the function
-        const fName = nameKey.value;
-        const fHp = hpKey.value;
-        const fAtk = atkKey.value;
-        const fDef = defKey.value;
-        const fSpd = spdKey.value;
 
         //verify there is good data to work with
-        if (fName && fHp && fAtk && fDef && fSpd) {
+        if (nameKey && hpKey && atkKey && defKey && spdKey) {
 
             //creates a new object
-            let hero = new Hero(fName, fHp, fAtk, fDef, fSpd);
+            let hero = new Hero(nameKey, hpKey, atkKey, defKey, spdKey);
 
             //since local storage can only hold a key and a value and I've created an object,
             //I need to change my object into something that can be stored. Enter JSON
             let hero1 = JSON.stringify(hero);
 
             //stores the JSON as the value using the name provided as the key
-            localStorage.setItem(fName, hero1);
+            localStorage.setItem(nameKey, hero1);
 
             //reloads the page after each click
             location.reload();
