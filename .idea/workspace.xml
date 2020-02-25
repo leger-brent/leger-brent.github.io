@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7cff3abe-b979-44a2-87d9-86fac7e74393" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 5 - Local Storage/localStorage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 5 - Local Storage/localStorage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +65,7 @@
       <updated>1582513766758</updated>
       <workItem from="1582513768697" duration="9813000" />
       <workItem from="1582567805144" duration="14567000" />
+      <workItem from="1582651328409" duration="1492000" />
     </task>
     <servers />
   </component>
@@ -76,10 +78,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582525078398">
+    <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582651801095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.258.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582525078398" />
+    <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.258.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582651801095" />
     <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1582586497004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

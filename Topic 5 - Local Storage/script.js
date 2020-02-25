@@ -7,40 +7,40 @@ class Hero {
         this.def = def;
         this.spd = spd;
     }
-};
+}
 
 //stops this section from running until there is data available
 window.onload = function () {
-    //brings data over from the form on the html file.
-    let nameKey = document.getElementById("hname").value;
-    let hpKey = document.getElementById("hp").value;
-    let atkKey = document.getElementById("atk").value;
-    let defKey = document.getElementById("def").value;
-    let spdKey = document.getElementById("spd").value;
-    let lsOutput = document.getElementById("output").value;
+
+    //Used to present information back to the user
+    const lsOutput = document.getElementById("output");
 
     //starts a function whenever the submit button is clicked
     document.getElementById("btn").addEventListener("click", function () {
 
-        //pull data into the function
+        let hName = document.getElementById("hname").value;
+        let hHp = document.getElementById("hp");
+        let hAtk = document.getElementById("atk");
+        let hDef = document.getElementById("def");
+        let hSpd = document.getElementById("spd");
 
         //verify there is good data to work with
-        if (nameKey && hpKey && atkKey && defKey && spdKey) {
+        if (hName && hHp && hAtk && hDef && hSpd) {
 
             //creates a new object
-            let hero = new Hero(nameKey, hpKey, atkKey, defKey, spdKey);
+            let hero = new Hero(hName, hHp, hAtk, hDef, hSpd);
 
             //since local storage can only hold a key and a value and I've created an object,
             //I need to change my object into something that can be stored. Enter JSON
             let hero1 = JSON.stringify(hero);
 
             //stores the JSON as the value using the name provided as the key
-            localStorage.setItem(nameKey, hero1);
+            localStorage.setItem(hName, hero1);
 
             //reloads the page after each click
             location.reload();
         }
-    })
+    });
 
     //starts a function whenever clear all clicked.
     document.getElementById("clrBtn").addEventListener("click", function () {
@@ -57,7 +57,7 @@ window.onload = function () {
         const key = localStorage.key(i);
         const value = localStorage.getItem(key);
 
-        //I was right the whole time. This isn't jQuery, but Template Literals found natively in ES6
+        //Print the values
         lsOutput.innerHTML += `${key}: ${value}<br/>`
     }
 
