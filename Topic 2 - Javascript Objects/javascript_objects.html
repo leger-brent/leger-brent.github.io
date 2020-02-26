@@ -2,67 +2,117 @@
 <html>
 
 <head>
-  <title>Javascript Objects</title>
+    <title>Javascript Objects</title>
+    <link rel="stylesheet" type="text/css" href="../mycss.css">
 </head>
 
 <body>
-  <script src="script.js"></script>
+<div class="header">
+    Javascript Objects<br>
+    <a style="font-size: 20pt;" href="../index.html">Home</a>
+</div>
 
-  <h3>Below is the javascript that is run from an external file. The comments explain what each section does. Use the
-    console to view the output.</h3>
-  
-  <pre>
-//This creates a class for an object
-class Person {
-  //contructor for the object
-  constructor(name) {
-    //fields for the object
-    this.name = name;
-  }
-  //method for the object
-  greet() {
-    console.log("Hi, my name is " + this.name + ".");
-  }
-  action() {
-	console.log(this.name + " smiles at you.");
-  }
-}
+<div class="content">
 
-// The creates a class for an object that extends another class
-class Hero extends Person {
-  constructor(name, attack, defense, hp, mp) {
-    //inherited field from parent class
-    super(name);
-    //extended fields for the object
-    this.attack = attack;
-    this.defense = defense;
-    this.hp = hp;
-    this.mp = mp;
-  }
-  
-  //Overloading the super method
-  action(){
-	console.log(this.name + " observes you.");
-  }
-}
+    <h2>Objects</h2>
+    Objects are containers for a collection of defined values and functions. To create a custom object, first create the
+    class (or blueprint) of what data the object will contain and also what functions it will be able to do. Each object
+    needs a constructor that will tell JavaScript that the user wants to create a new object from that blueprint.
+    Constructors can accept parameters.<br><br>
 
-//instantiate a new Person object
-var girl = new Person("Mei");
-// calls the function of the class
-girl.greet();
-// calls another function of the class
-girl.action();
+    <h2>Classes</h2>
+    In the following code block, I create a class for a Person. My class accepts a parameter called name in the
+    constructor. Name is the only data point in the class, and the value gets assigned whatever name the user passes to
+    it. I also include some functions, one where the object states their name and another where the object will smile at
+    you.
 
-//instantiate a new Hero object
-var hero1 = new Hero("Vahn", 10, 10, 50, 15);
-//method validating access to parent class
-hero1.greet();
-//method showing overloaded function performs a different action
-hero1.action();
-//call to field from the subclass
-console.log(hero1.attack);
-  </pre>
+    <pre>
+    class Person {
+      constructor(name) {
+        this.name = name;
+      }
+      greet() {
+        console.log("Hi, my name is " + this.name + ".");
+      }
+      action() {
+        console.log(this.name + " smiles at you.");
+      }
+    }
+    </pre>
 
+    <h2>Inheritance</h2>
+    Inheritance allows you to expand functionality a new blueprint while using and old blueprint as a template. Imagine
+    a bank account class. You can hold a value of money, transfer money in and out, and draw interest. Now you might
+    want to define a bit more because you want to differentiate between two subtypes called Checking and Savings. You
+    could extend the bank account class and use the functionality already built and only add the features you need to
+    each new respective class.<br><br>
+
+    In my example, I'm going to extend the Person class into a Hero class. A Hero is a Person, so will keep the name and
+    the ability to greet the same. However, heroes are more aware than your typical person, so their more prone to
+    observing people that simply smiling at them. We'll reflect that by overloading the parent (or super) class function
+    and causing the .action() function to state something different. They also have more attributes, so we'll create
+    some more variables to hold their hit points, magic points, attack, and defense stats.
+
+    <pre>
+      class Hero extends Person {
+        constructor(name, attack, defense, hp, mp) {
+          super(name);
+          this.attack = attack;
+          this.defense = defense;
+          this.hp = hp;
+          this.mp = mp;
+        }
+
+        action(){
+          console.log(this.name + " observes you.");
+        }
+      }
+    </pre>
+
+    <h2>Instantiating Objects</h2>
+    Now that we've created our blueprints, we can create our objects. We do this by creating a variable and assigning it
+    a new object with the appropriate parameters passed to it. Once it's created, we can call our functions from the
+    blueprint using the dot notation.
+
+    In this example, I create a girl variable and pass the string "Mei" to be her name. I then call teh .greet() and
+    .action() functions, which print to the log.
+
+    <pre>
+     var girl = new Person("Mei");
+     girl.greet();
+     girl.action();
+    </pre>
+
+    Now I'm going to instantiate a new Hero type object. I'll pass the necessary parameters and call the functions
+    .greet() and .action(). Remember, I did not explicitly define the .greet() function in the Hero class, so it will be
+    inheriting that from its parent (or super) class. One last thing I demonstrate is the ability to also reference the
+    data values by using .attack (which was defined in the class) on my hero1 variable. I print all of these outputs to
+    the log as well
+
+    <pre>
+      var hero1 = new Hero("Vahn", 10, 10, 50, 15);
+      hero1.greet();
+      hero1.action();
+      console.log(hero1.attack);
+    </pre>
+
+    <h2>Viewing the Output</h2>
+    Now that we've run through all the code, press F12 to open the developer tools. Make sure you're on the "Console"
+    tab and you should see the following output from the JavaScript that was run on your browser when the page loaded.
+
+    <pre>
+      Hi, my name is Mei.
+      Mei smiles at you.
+      Hi, my name is Vahn.
+      Vahn observes you.
+      10
+    </pre>
+</div>
+
+<div class="footer">
+    CIT 261 - Brent Leger - 2020
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>
