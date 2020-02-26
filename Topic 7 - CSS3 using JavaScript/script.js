@@ -1,26 +1,40 @@
 window.onload = function () {
 
     function winner() {
-        var x = document.getElementById("niners");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+
+        if (document.getElementById("niners").style.display === "none") {
+            document.getElementById("niners").style.display = "block";
         } else {
-            x.style.display = "none";
+            document.getElementById("niners").style.display = "none";
         }
     }
 
-    function bigger(){
-        document.getElementById("chiefs").style.width = "600px";
-        document.getElementById("chiefs").style.height = "300px";
-        document.getElementById("niners").style.width = "600px";
-        document.getElementById("niners").style.height = "300px";
+    function bigger() {
+        if (document.getElementById("chiefs").style.width === "30%") {
+            document.getElementById("chiefs").style.width = "20%";
+            document.getElementById("chiefs").style.height = "20%";
+            document.getElementById("niners").style.width = "20%";
+            document.getElementById("niners").style.height = "20%";
+        } else {
+            document.getElementById("chiefs").style.width = "30%";
+            document.getElementById("chiefs").style.height = "30%";
+            document.getElementById("niners").style.width = "30%";
+            document.getElementById("niners").style.height = "30%";
+        }
     }
 
-    function smaller(){
-        document.getElementById("chiefs").style.width = "200px";
-        document.getElementById("chiefs").style.height = "100px";
-        document.getElementById("niners").style.width = "200px";
-        document.getElementById("niners").style.height = "100px";
+    function smaller() {
+        if (document.getElementById("chiefs").style.width === "15%") {
+            document.getElementById("chiefs").style.width = "25%";
+            document.getElementById("chiefs").style.height = "25%";
+            document.getElementById("niners").style.width = "25%";
+            document.getElementById("niners").style.height = "25%";
+        } else {
+            document.getElementById("chiefs").style.width = "15%";
+            document.getElementById("chiefs").style.height = "15%";
+            document.getElementById("niners").style.width = "15%";
+            document.getElementById("niners").style.height = "15%";
+        }
     }
 
     document.getElementById("btn").addEventListener("click", function () {

@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cff3abe-b979-44a2-87d9-86fac7e74393" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 10 - HTML5 Tags/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 10 - HTML5 Tags/html5tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 11 - CSS3 Transitions/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 11 - CSS3 Transitions/css3transitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 12 - CSS3 Transforms/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 12 - CSS3 Transforms/css3transforms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 13 - CSS3 Animations/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 13 - CSS3 Animations/css3animations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 3 - JSON Parsify and Stringify/heroes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 6 - DOM/dom.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 6 - DOM/dom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 6 - DOM/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 6 - DOM/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/49ers.png" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/49ers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/ccs3js.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/ccs3js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/chiefs.png" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/chiefs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 8 - CSS3 Transitions, Animations, Transformations with JS/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 8 - CSS3 Transitions, Animations, Transformations with JS/css_transitions_animations_transformations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 9 - JavaScript Events/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 9 - JavaScript Events/jsevents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +79,7 @@
       <workItem from="1582513768697" duration="9813000" />
       <workItem from="1582567805144" duration="14567000" />
       <workItem from="1582651328409" duration="31289000" />
-      <workItem from="1582730238107" duration="606000" />
+      <workItem from="1582730238107" duration="5309000" />
     </task>
     <servers />
   </component>
