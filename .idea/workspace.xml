@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7cff3abe-b979-44a2-87d9-86fac7e74393" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 3 - JSON Parsify and Stringify/JSON.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 3 - JSON Parsify and Stringify/JSON.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Topic 4 - AJAX/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 4 - AJAX/ajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 5 - Local Storage/localStorage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 5 - Local Storage/localStorage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 5 - Local Storage/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 5 - Local Storage/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 5 - Local Storage/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/ccs3js.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/ccs3js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 7 - CSS3 using JavaScript/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/mycss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 4 - AJAX/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 4 - AJAX/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +65,7 @@
       <updated>1582513766758</updated>
       <workItem from="1582513768697" duration="9813000" />
       <workItem from="1582567805144" duration="14567000" />
-      <workItem from="1582651328409" duration="25148000" />
+      <workItem from="1582651328409" duration="30972000" />
     </task>
     <servers />
   </component>
@@ -100,10 +94,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/-1920.258.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582514221417" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1582674800637">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1582686013580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/-1920.258.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582674800637" />
+    <state x="616" y="240" key="run.anything.popup/-1920.258.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582686013580" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582525600177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

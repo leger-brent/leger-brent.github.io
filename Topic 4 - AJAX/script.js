@@ -1,27 +1,39 @@
+window.onload = function () {
 //create a new request variable
-var xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
 
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+
+    document.getElementById("btn").addEventListener("click", function () {
 //This function will run as a request goes through a state change
-xhttp.onreadystatechange = function() {
- 
- //watches for when the ready state is 4 and status code is 200. Essentially this is a successful response.
-  if (this.readyState == 4 && this.status == 200) {
-   
-   //creates a variable that parses the response
-    var parsed = JSON.parse(xhttp.responseText);
+            let i = document.getElementById("num").value;
+                xhttp.onreadystatechange = function () {
 
-    //prints the parsed JSON as an object to the console
-    console.log(parsed);
+                    //watches for when the ready state is 4 and status code is 200. Essentially this is a successful response.
+                    if (this.readyState == 4 && this.status == 200) {
 
-    //pulls the pokemon name and height returned from the api. This will vary dependening on the input from the user
-    console.log("Pokemon name: " + parsed.name);
-    console.log("Pokemon height: " + parsed.height);
-  }
+                        //creates a variable that parses the response
+                        var parsed = JSON.parse(xhttp.responseText);
+
+                        //pulls the pokemon name and types returned from the api. This will vary depending on the input from the user
+                        let word = capitalizeFirstLetter(parsed.name)
+                        document.getElementById("pName").innerHTML = word;
+                        document.getElementById("pTypes").innerHTML = "";
+
+                        for (var i = 0; i < parsed.types.length; i++) {
+                            word = capitalizeFirstLetter(parsed.types[i].type.name)
+                            document.getElementById("pTypes").innerHTML += word + "<br/>";
+                        }
+                    }
+                };
+
+                //passes the number to the pokeapi to request data from the pokemon that corresponds to that number
+                xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + i + "/", true);
+                xhttp.send();
+        }
+    )
+    ;
 };
-
-//prompts the user to pick a number between 1-807
-var i = prompt("Pick a number 1-807");
-
-//passes the number to the pokeapi to request data from the pokemon that corresponds to that number
-xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + i + "/", true);
-xhttp.send();
