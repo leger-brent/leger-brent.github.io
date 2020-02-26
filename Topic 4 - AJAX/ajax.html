@@ -15,17 +15,33 @@
 </div>
 
 <div class="content">
+    <h2>AJAX</h2>
+    AJAX stands for "Asynchronous JavaScript and XML" and is a powerful tool for sending and receiving data in the
+    background without reloading the page.<br><br>
+
+    AJAX makes asynchronous updates by using an XMLHttpRequest objects. These objects can be set to run on a prescribed
+    event such as a page load or button click. The XMLHttpRequest sends either a POST or GET request to another server.
+    These requests track their state changes, as well as responses from the external server.<br><br>
+
+    In my example below, the PokeSelector, I use a script with user input to generate an XMLHttpRequest object to
+    generate a GET request to pokeapi. The script only sends when the Submit button is clicked. Upon the successful
+    response from the API, I parse the incoming JSON and extract the name and types of the Pokemon that corresponds to
+    the number the user has given.<br><br>
+    Note that none of the Pokemon data is stored locally, yet I'm able to access over 800 of them using AJAX.<br><br>
+
     <div style="text-align:center; font-size: 36pt; padding: 20px">Welcome to the PokeSelector!</div>
     <fieldset style="width: 70%; margin:auto; padding: 10px; border: none">
         <label for="num">Enter a number between 1-806:</label><br>
         <input type="number" id="num">
         <button type="button" id="btn">Submit</button>
-    </fieldset><br><br>
+    </fieldset>
+    <br><br>
 
     <fieldset style="padding: 10px; border: none">
-        <legend style="font-size: 36pt; text-align: center">Your Pokemon</legend>
+        <legend style="font-size: 30pt; text-align: center">Your Pokemon is:</legend>
         <label for="pName" style="text-align: left">Name:</label>
-        <div id="pName"></div><br>
+        <div id="pName"></div>
+        <br>
         <label for="pTypes" style="text-align: left">Type(s):</label>
         <div id="pTypes"></div>
     </fieldset>

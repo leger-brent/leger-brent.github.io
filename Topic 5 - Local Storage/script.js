@@ -9,8 +9,20 @@ class Hero {
     }
 }
 
+function loopy(output) {
+    output.innerHTML = "";
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+
+        output.innerHTML += `${key}: ${value}<br/>`
+    }
+    ;
+}
+
 //stops this section from running until there is data available
 window.onload = function () {
+
 
     //Used to present information back to the user
     const lsOutput = document.getElementById("output");
@@ -37,8 +49,7 @@ window.onload = function () {
             //stores the JSON as the value using the name provided as the key
             localStorage.setItem(hName, hero1);
 
-            //reloads the page after each click
-            location.reload();
+            loopy(lsOutput);
         }
     });
 
@@ -48,19 +59,9 @@ window.onload = function () {
         //clears local storage of all data
         localStorage.clear();
 
-        //reloads the page
-        location.reload();
+        loopy(lsOutput);
     });
 
-    //loops through the length of local storage and prints the key and value
-    for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        const value = localStorage.getItem(key);
-
-        //Print the values
-
-        lsOutput.innerHTML += `${key}: ${value}<br/>`
-
-    }
+    loopy(lsOutput);
 
 };

@@ -3,44 +3,69 @@
 
 
 <head>
-  <meta charset="UTF-8">
-  <title>CIT 261</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="../mycss.css">
+    <meta charset="UTF-8">
+    <title>CIT 261</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../mycss.css">
 </head>
 
 <body>
 <div class="header">
-  Local Storage<br>
-  <a style="font-size: 20pt;" href="../index.html">Home</a>
+    Local Storage<br>
+    <a style="font-size: 20pt;" href="../index.html">Home</a>
 </div>
 
 <div class="content">
+    <h2>Local Storage</h2>
+    Local Storage is the ability to store web data in the clients web browser. Storage size depends on a browser type
+    and compatibility, but the minimum storage amount is 5MB. Local Storage will keep its data stored forever or until
+    it's explicitly deleted.<br><br>
 
+    <h2>Session Storage</h2>
+    Session Storage works exactly the same way as Local Storage with one exception. Session Storage will automatically
+    delete when the session is terminated.<br><br>
 
-<fieldset>
-<legend>Hero</legend>
-  <label for="hname">Name:</label>
-  <input type="text" id="hname" name="hname"><br><br>
-  <label for="hp">Hit Points:</label>
-  <input type="number" id="hp" name="hp"><br><br>
-  <label for="atk">Attack:</label>
-  <input type="number" id="atk" name="atk"><br><br>
-  <label for="def">Defense:</label>
-  <input type="number" id="def" name="def"><br><br>
-  <label for="spd">Speed:</label>
-  <input type="number" id="spd" name="spd"><br><br>
-  <button type="button" id="btn" >Submit</button>
-  <button type="button" id="clrBtn" >Clear All</button>
-</fieldset>
+    <h2>Functions and Uses</h2>
+    There are essentially three functions of Local Storage (these functions apply to Session Storage as well):
+    <ul>
+        <li>localStorage.setItem() - which stores information.</li>
+        <li>localStorage.getItem() - which retrieves information.</li>
+        <li>localStorage.clear() - which deletes everything in storage.</li>
+    </ul>
 
-<fieldset>
-  <legend>Your Hero Info</legend>
-  <div id="output"></div>
-</fieldset>
+    An important item to note is that both Local Storage and Session Storage can hold information in a key:value pair.
+    The value cannot be an object, so to store an object, it must first be converted to a JSON string.<br><br>
+
+    In my example below, I take input from a user and create an actual hero object out of it. I convert the object to a
+    JSON and store the entire JSON string as the value while using the name input as the key. Local storage is neat in
+    that any update to a value that already has present key will update the item already in storage. You can test this
+    out by updating values while keeping the name the same.
+
+    <h2 style="text-align: center; font-size: 30pt;">Store a Hero</h2>
+
+    <fieldset>
+        <legend>Hero</legend>
+        <label for="hname">Name:</label>
+        <input type="text" id="hname" name="hname"><br><br>
+        <label for="hp">Hit Points:</label>
+        <input type="number" id="hp" name="hp"><br><br>
+        <label for="atk">Attack:</label>
+        <input type="number" id="atk" name="atk"><br><br>
+        <label for="def">Defense:</label>
+        <input type="number" id="def" name="def"><br><br>
+        <label for="spd">Speed:</label>
+        <input type="number" id="spd" name="spd"><br><br>
+        <button type="button" id="btn">Submit</button>
+        <button type="button" id="clrBtn">Clear All</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Stored Heroes</legend>
+        <div id="output"></div>
+    </fieldset>
 </div>
 <div class="footer">
-  CIT 261 - Brent Leger - 2020
+    CIT 261 - Brent Leger - 2020
 </div>
 
 <script src="script.js"></script>
