@@ -58,7 +58,9 @@ window.onload = function () {
         const value = localStorage.getItem(key);
 
         //Print the values
+
         lsOutput.innerHTML += `${key}: ${value}<br/>`
+
     }
 
 };

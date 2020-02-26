@@ -2,98 +2,175 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>CIT 261</title>
+    <meta charset="UTF-8">
+    <title>CIT 261</title>
+    <link rel="stylesheet" type="text/css" href="../mycss.css">
 </head>
 
 <body>
-  <script src="script.js"></script>
+<div class="header">
+    JSON Parse and Stringify<br>
+    <a style="font-size: 20pt;" href="../index.html">Home</a>
+</div>
 
-  <p>
+<div class="content">
+    <h2>JSON</h2>
+    JSON stands for JavaScript Object Notation. JSON is simply a lightweight standard to convert an object to a string
+    and vice versa. The lightweight characteristics of JSON make it an extremely useful tool in transferring
+    data.<br><br>
+
+    <h2> Parse</h2>
+    Let's say I want to make an API call to retrieve data from some external website. I make the call and get a string
+    file representing the object (the JSON file). Great! But now I have the issue of it being a string, and as a string,
+    I can't run many useful functions against it. Enter the parse function. The parse function converts my JSON string
+    into usable object.<br><br>
+
+    Here's a demonstration on how it works. I first create a variable to hold a string. Notice I've structured the
+    string like an object, and it would be an object if not for the tic marks on either side of the brackets. To add a
+    bit of complexity and demonstration, I've nested other would-be objects (raSeru) inside the top-level objects. To
+    see it in string form, I've printed it to the console.
+
     <pre>
-<h3>Below is the javascript that is run from an external file. The comments explain what each section does. Use the console to view the output.</h3>
+      var jsonInput =
+      `[
+         {
+            "name":"Vahn",
+            "level":15,
+            "hp":700,
+            "mp":90,
+            "atk":50,
+            "def":50,
+            "spd":50,
+            "raSeru":[
+               {
+                  "name":"Meta",
+                  "level":3
+               }
+            ]
+         },
+         {
+            "name":"Noa",
+            "level":12,
+            "hp":550,
+            "mp":75,
+            "atk":30,
+            "def":30,
+            "spd":70,
+            "raSeru":[
+               {
+                  "name":"Terra",
+                  "level":2
+               }
+            ]
+         }
+      ]`
+
+       console.log(jsonInput);
     </pre>
 
-  </p>
-
-  <p>
+    Now that I have my simulated JSON, I'm ready to parse it. Parsing it will allow me more freedom to manipulate object
+    using functions. To do so, I'm going to create a variable called parsed to whole the object data converted from the
+    jsonInput variable holding the JSON string data.
     <pre>
-// Here I'm simulating a JSON file that you would import from an external webserver. I've created objects at the top level with objects nested underneath them
-var jsonInput = 
-`[
-   {
-      "name":"Vahn",
-      "level":15,
-      "hp":700,
-      "mp":90,
-      "atk":50,
-      "def":50,
-      "spd":50,
-      "raSeru":[
-         {
-            "name":"Meta",
-            "level":3
-         }
-      ]
-   },
-   {
-      "name":"Noa",
-      "level":12,
-      "hp":550,
-      "mp":75,
-      "atk":30,
-      "def":30,
-      "spd":70,
-      "raSeru":[
-         {
-            "name":"Terra",
-            "level":2
-         }
-      ]
-   }
-]`
+      var parsed = JSON.parse(jsonInput);
+   </pre>
 
-//I print the simulated input to the log to verify that it actually a string file.
-console.log(jsonInput);
+    That's it!<br><br>
+    Now that the object is parsed, I can use a function. I'll use the push function to add another hero to the array.
+    Note again the the structure looks like the structure of the JSON string above.
 
-//Now that I've verifed my JSON is actually a string, I'm ready to parse it. Parsing it will allow me to manipulate the data of the object using functions. 
-var parsed = JSON.parse(jsonInput);
-
-//Now that the object is parsed, I can use a function. I use the push function to add another hero to the array.
-parsed.push(
-[
-   {
-      "name":"Gala",
-      "level":10,
-      "hp":700,
-      "mp":40,
-      "atk":70,
-      "def":60,
-      "spd":20,
-      "raSeru":[
+    <pre>
+      parsed.push([{
+         "name":"Gala",
+         "level":10,
+         "hp":700,
+         "mp":40,
+         "atk":70,
+         "def":60,
+         "spd":20,
+         "raSeru":[
          {
             "name":"Ozma",
             "level":1
-         }
-      ]
-   }
-   ]
-   )
+         }]}])
+   </pre>
 
-//I can also manipulate a specific data field by referencing the index of the object in the array and using the dot notation on the field. 
-//Here I update the hp for my first hero.
-parsed[0].hp = parsed[0].hp + 100;
+    I can also manipulate a specific data field by referencing the index of the object in the array and using the dot
+    notation of the field I want. In this example, I update the hp of the hero in the first index. I print the updated
+    value to the console.
 
-//I print the updated value to the console to verify that it updated.
-console.log(parsed[0].hp);
+    <pre>
+      parsed[0].hp = parsed[0].hp + 100;
 
-//To turn my object back into a string, I use the stringify function on my parsed variable. I chose to create a new variable to hold the new string data.
-var jsonOutput = JSON.stringify(parsed);
-
-//I print the new variable to the console and see that it is indeed a string and no longer an object.
-console.log(jsonOutput);
+      console.log(parsed[0].hp);
     </pre>
-  </p>
+
+    <h2>Stringify</h2>
+    Now that I've updated my object, let's say I'm ready to send it back. The most efficient way of doing this is
+    converting it to JSON.<br><br>
+
+    To do this, I use the JSON.stringify() function on my variable. I chose to create a new jsonOutput variable to hold
+    this new JSON string. I print this string to the console as well to see what it contains.
+    <pre>
+       var jsonOutput = JSON.stringify(parsed);
+       console.log(jsonOutput);
+    </pre>
+
+    <h2>Viewing the Output</h2>
+    Now that we've run through all the code, press F12 to open the developer tools. Make sure you're on the "Console"
+    tab and you should see the following output from the JavaScript that was run on your browser when the page loaded
+    Your formatting may be a bit different. Notice the updated value of Vahn's hp in the final string. It's 100 more
+    when we increased it with our function.
+
+    <pre>
+   [
+      {
+         "name":"Vahn",
+         "level":15,
+         "hp":700,
+         "mp":90,
+         "atk":50,
+         "def":50,
+         "spd":50,
+         "raSeru":[
+            {
+               "name":"Meta",
+               "level":3
+            }
+         ]
+      },
+     {
+         "name":"Noa",
+         "level":12,
+         "hp":550,
+         "mp":75,
+         "atk":30,
+         "def":30,
+         "spd":70,
+         "raSeru":[
+            {
+               "name":"Terra",
+               "level":2
+            }
+         ]
+      }
+   ]
+
+   800
+
+   [{"name":"Vahn","level":15,"hp":800,"mp":90,"atk":50,"def":50,"spd":50,"raSeru":
+       [{"name":"Meta","level":3}]},
+   {"name":"Noa","level":12,"hp":550,"mp":75,"atk":30,"def":30,"spd":70,"raSeru":
+       [{"name":"Terra","level":2}]},
+   {"name":"Gala","level":10,"hp":700,"mp":40,"atk":70,"def":60,"spd":20,"raSeru":
+       [{"name":"Ozma","level":1}]}]
+   </pre>
+</div>
+
+<div class="footer">
+    CIT 261 - Brent Leger - 2020
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>

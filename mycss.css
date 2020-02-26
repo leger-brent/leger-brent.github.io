@@ -24,6 +24,12 @@ a:visited{
     color: lightslategray;
 }
 
+fieldset{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
 .header{
     text-align: center;
     font-size: 36px;

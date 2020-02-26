@@ -2,21 +2,26 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>CIT 261</title>
+    <meta charset="UTF-8">
+    <title>CIT 261</title>
+    <link rel="stylesheet" type="text/css" href="../mycss.css">
 </head>
 
 <body>
-  <script src="script.js"></script>
+<div class="header">
+    AJAX<br>
+    <a style="font-size: 20pt;" href="../index.html">Home</a>
+</div>
 
-  <p>
+<div class="content">
+    <p>
     <pre>
 <h3>Below is the javascript that is run from an external file. The comments explain what each section does. Use the console to view the output.</h3>
     </pre>
 
-  </p>
+    </p>
 
-  <p>
+    <p>
     <pre>
 //create a new request variable
 var xhttp = new XMLHttpRequest();
@@ -47,7 +52,12 @@ xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + i + "/", true);
 xhttp.send();
 
     </pre>
-  </p>
+    </p>
+</div>
+<div class="footer">
+    CIT 261 - Brent Leger - 2020
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>
