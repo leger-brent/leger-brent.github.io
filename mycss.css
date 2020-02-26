@@ -16,7 +16,7 @@ a:link{
 }
 
 pre{
-    margin:10pt;
+    margin:10px;
     font-size: 16pt;
 }
 
@@ -28,6 +28,12 @@ fieldset{
     text-align: center;
     width: 40%;
     margin: auto;
+}
+
+code{
+    display: block;
+    margin-left: 2.75%;
+    font-size: 16pt;
 }
 
 .header{
