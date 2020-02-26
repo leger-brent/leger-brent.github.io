@@ -25,10 +25,10 @@ window.onload = function () {
 
     function smaller() {
         if (document.getElementById("chiefs").style.width === "15%") {
-            document.getElementById("chiefs").style.width = "25%";
-            document.getElementById("chiefs").style.height = "25%";
-            document.getElementById("niners").style.width = "25%";
-            document.getElementById("niners").style.height = "25%";
+            document.getElementById("chiefs").style.width = "20%";
+            document.getElementById("chiefs").style.height = "20%";
+            document.getElementById("niners").style.width = "20%";
+            document.getElementById("niners").style.height = "20%";
         } else {
             document.getElementById("chiefs").style.width = "15%";
             document.getElementById("chiefs").style.height = "15%";
