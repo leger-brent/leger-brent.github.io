@@ -37,7 +37,7 @@ code{
     font-size: 16pt;
 }
 
-.header{
+header{
     text-align: center;
     font-size: 36px;
     background: #2c5373;
@@ -47,7 +47,7 @@ code{
     padding: 10px;
 }
 
-.content{
+main{
     padding: 2.5%;
     background: #2c5373;
     font-size: 18pt;
@@ -57,7 +57,7 @@ code{
     margin-bottom: 1%;
 }
 
-.footer{
+footer{
     text-align: center;
     background: #2c5373;
     font-size: 24pt;
@@ -65,5 +65,4 @@ code{
     margin-right: 7%;
     padding: 5px;
 }
-
 

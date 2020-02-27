@@ -1,0 +1,66 @@
+#square {
+    display: block;
+    margin: auto;
+}
+
+.square-to-circle {
+    animation: square-to-circle 1s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.circle{
+    width: 75px;
+    height: 75px;
+    background-color: azure;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.linear-circle {
+    transition-timing-function: linear;
+    transition-duration: 3s;
+    margin-left: 94%;
+}
+
+.ease-circle {
+    transition-timing-function: ease;
+    transition-duration: 3s;
+    margin-left: 94%;
+}
+
+.ease-in-circle {
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+    margin-left: 94%;
+}
+
+.ease-out-circle {
+    transition-timing-function: ease-out;
+    transition-duration: 3s;
+    margin-left: 94%;
+}
+
+.ease-in-out-circle {
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+    margin-left: 94%;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0;
+        background: azure;
+        width: 170px;
+        height: 170px;
+    }
+    100% {
+        border-radius: 50%;
+        background: aqua;
+        width: 300px;
+        height: 300px;
+    }
+}
