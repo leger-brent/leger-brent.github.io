@@ -44,6 +44,7 @@ function howMany(array) {
 i = howMany(hero);
 
 //print the value of i
+
 console.log("There are " + i + " elements in the Hero Array.");
 
 //associate array

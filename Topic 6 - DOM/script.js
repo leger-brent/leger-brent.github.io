@@ -13,22 +13,22 @@ window.onload = function () {
         return newLi;
     }
 
-    document.getElementById("btn").addEventListener("click", function () {
+    document.getElementById("btn").addEventListener("click", function (qualifiedName, value) {
 
-        if (clickNum == 0) {
-            list.appendChild(listItem("appendChild to list"));
+        if (clickNum === 0) {
+            list.appendChild(listItem("createElement and appendChild to list"));
             document.getElementById("btn").innerHTML = "Click to Insert Before";
-            clickNum += 1;
-        } else if (clickNum == 1) {
+            clickNum++;
+        } else if (clickNum === 1) {
             list.insertBefore(listItem("insertBefore Original - Two"), item);
             document.getElementById("btn").innerHTML = "Click to Remove Child";
-            clickNum += 1;
-        } else if (clickNum == 2) {
+            clickNum++;
+        } else if (clickNum === 2) {
             list.removeChild(remove);
-            document.getElementById("btn").innerHTML = "Click to Start Over";
-            clickNum += 1;
+            document.getElementById("btn").innerHTML = "Start Over";
+            clickNum++;
         } else {
             location.reload();
         }
     })
-}
+};

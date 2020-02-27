@@ -2,10 +2,10 @@ window.onload = function () {
 
     function winner() {
 
-        if (document.getElementById("niners").style.display === "none") {
+        if (document.getElementById("niners").style.display === "hidden") {
             document.getElementById("niners").style.display = "block";
         } else {
-            document.getElementById("niners").style.display = "none";
+            document.getElementById("niners").style.visibility = "hidden";
         }
     }
 

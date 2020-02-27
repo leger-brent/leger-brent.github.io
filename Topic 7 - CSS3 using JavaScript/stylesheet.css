@@ -1,16 +1,15 @@
 .logos{
-    margin: auto;
     display: block;
+    margin:auto;
 }
 
 img{
-    display: block;
-    margin:auto;
     padding: 5px;
+    display: block;
+    margin: auto;
 }
 
 .options{
-    margin-top: auto;
     padding-top: 20px;
 }
 

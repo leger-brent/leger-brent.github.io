@@ -6,3 +6,9 @@ li{
 .custom{
     background: black;
 }
+
+#square{
+    display: block;
+    margin: auto 10px;
+    color: black;
+}
