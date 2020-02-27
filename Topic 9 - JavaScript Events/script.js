@@ -5,7 +5,7 @@ window.onload = function () {
         document.getElementById("square").style.animationPlayState = "running"
     };
 
-    document.getElementById("square").ontouchend = function () {
+    document.getElementById("square").addEventListener("touchend",ontouchend,false);{
         document.getElementById("square").style.animationPlayState = "paused"
     };
 
