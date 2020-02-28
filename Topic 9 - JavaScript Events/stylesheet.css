@@ -32,6 +32,7 @@
 .linear-circle {
     margin-left: 94%;
     transition-timing-function: linear;
+    background-color: darkgray;
 }
 
 
