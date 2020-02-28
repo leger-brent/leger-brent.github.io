@@ -3,6 +3,14 @@
     margin: auto;
 }
 
+#mouse{
+    text-align: center;
+    height: 200px;
+    width: auto;
+    background: azure;
+    color: #2c5373;
+}
+
 .square-to-circle {
     animation: square-to-circle 1s;
     animation-fill-mode: both;
@@ -10,6 +18,22 @@
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
+
+.circle {
+    width: 75px;
+    height: 75px;
+    background-color: azure;
+    border-radius: 50%;
+    transition: 3s;
+    transition-timing-function: linear;
+    margin-bottom: 40px;
+}
+
+.linear-circle {
+    margin-left: 94%;
+    transition-timing-function: linear;
+}
+
 
 @keyframes square-to-circle {
     0% {
