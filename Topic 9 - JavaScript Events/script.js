@@ -27,7 +27,7 @@ window.onload = function () {
         document.getElementById("linear").classList.toggle("linear-circle")
     }, 3500);
 
-    document.getElementById("square").addEventListener("touchstart", function () {
+    document.getElementById("linear").addEventListener("touchstart", function () {
         event.preventDefault();
         document.getElementById("linear").classList.toggle("linear-circle")
     });
