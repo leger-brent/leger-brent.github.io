@@ -2,25 +2,39 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>CIT 261</title>
-  <link rel="stylesheet" type="text/css" href="../mycss.css"
+    <meta charset="UTF-8">
+    <title>CIT 261</title>
+    <link rel="stylesheet" type="text/css" href="../mycss.css">
 </head>
 
 <body>
 
-  <header>
+<header>
     HTML5 Tags<br>
     <a style="font-size: 20pt;" href="../index.html">Home</a>
-  </header>
+</header>
 
-  <main>
+<main>
 
-  </main>
+    <video style="margin:auto; display: block" controls="controls" height="75% " width="75%" autoplay loop>
+        <source src="Space_1.mp4" type="video/mp4">
+    </video>
 
-  <footer>
+    <audio style="margin: auto; display: block" autoplay controls="controls">
+        <source src="Jim%20Yosef%20-%20Firefly%20_NCS%20Release_.mp3" type="audio/mp3">
+    </audio>
+
+  <canvas id="myCanvas" width="1000px" height="100%"
+          style="display:block;margin: 30px auto; border-style: double; border-color: azure">
+    Your browser does not support the canvas element.
+  </canvas>
+    <button style="display:block; font-size: 20pt; margin: auto; padding: 20px" id="btn">Click to view credits</button>
+
+</main>
+
+<footer>
     CIT 261 - Brent Leger - 2020
-  </footer>
+</footer>
 
 <script src="script.js"></script>
 </body>

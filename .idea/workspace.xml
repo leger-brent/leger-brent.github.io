@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cff3abe-b979-44a2-87d9-86fac7e74393" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Topic 9 - JavaScript Events/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 9 - JavaScript Events/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 10 - HTML5 Tags/Jim Yosef - Firefly _NCS Release_.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 10 - HTML5 Tags/Space_1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topic 10 - HTML5 Tags/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 10 - HTML5 Tags/html5tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 10 - HTML5 Tags/html5tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 11 - CSS3 Transitions/css3transitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 11 - CSS3 Transitions/css3transitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 12 - CSS3 Transforms/css3transforms.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 12 - CSS3 Transforms/css3transforms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topic 13 - CSS3 Animations/css3animations.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topic 13 - CSS3 Animations/css3animations.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +48,11 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CIT261\leger-brent.github.io\Topic 10 - HTML5 Tags" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="javascript.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/leger-brent.github.io/Topic 1 - Javascript/javascript.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -65,7 +77,7 @@
       <workItem from="1582567805144" duration="14567000" />
       <workItem from="1582651328409" duration="31289000" />
       <workItem from="1582730238107" duration="30414000" />
-      <workItem from="1582807913765" duration="18580000" />
+      <workItem from="1582807913765" duration="24694000" />
     </task>
     <servers />
   </component>
@@ -78,6 +90,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="646" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583001912088">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="323" key="#com.intellij.fileTypes.FileTypeChooser/-1920.258.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583001912088" />
     <state x="718" y="391" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582662089565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
