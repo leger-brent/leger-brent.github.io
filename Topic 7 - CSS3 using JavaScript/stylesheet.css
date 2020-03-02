@@ -1,12 +1,11 @@
 .logos{
-    display: block;
-    margin:auto;
+    margin: auto;
 }
 
 img{
-    padding: 5px;
     display: block;
-    margin: auto;
+    margin:auto;
+    padding: 5px;
 }
 
 .options{
