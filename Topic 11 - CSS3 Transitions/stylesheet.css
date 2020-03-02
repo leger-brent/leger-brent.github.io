@@ -1,0 +1,37 @@
+#transitionMe{
+    text-align: center;
+    font-size: 30pt;
+}
+
+#transitionMe:hover{
+    background-color: black;
+    color: #2c5373;
+    transition-duration: 1s;
+}
+
+#growMe{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: auto;
+    display: block;
+    transition: 2s 1s;
+}
+
+#growMe:hover{
+    height: 400px;
+    width: 400px;
+    color: #2c5373;
+    background-color: azure;
+    font-size: 30pt;
+}
+
+input{
+   width: 150pt;
+    transition-duration: 5s;
+}
+
+input:focus{
+    width: 500pt;
+}
