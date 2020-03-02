@@ -1,0 +1,27 @@
+.square {
+    text-align: center;
+    margin: 75px auto;
+    height: 225px;
+    width: 225px;
+    background-color: azure;
+    color: #2c5373;
+    font-weight: bold;
+    transition: transform 2s;
+}
+
+#rotate3d:hover {
+    transform: rotate3d(1, 1, 1, 180deg);
+    perspective: 100px;
+}
+
+#scale:hover {
+    transform: scale(3, .25);
+}
+
+#translate:active {
+    transform: translate3d(-75%, 50%, 0);
+}
+
+#all:active {
+    transform: translate(275%, 0) scale(1.5, 1.5) rotateY(1620deg);
+}
