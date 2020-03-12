@@ -18,20 +18,25 @@
 <main>
 
     <fieldset style="border: none;width:90%; text-align: left; margin-top: 60px">
-
+        <p>This circle uses the linear transition from last project, but it has been upgraded not to snap back to the
+            start position. This time it starts onLoad and then toggles back at the end. It uses touch event, so after
+            the original transition, the only way to toggle the transition again is with a touch device.</p>
         <div id="linear" class="circle"></div>
 
-    <div id="mouse">
-        Click in this box.
-        <div id="mouseClick"></div>
-    </div>
+        <p>This box registers onclick events and wil give you the position of your x and y coordinates of where the
+            event happened on the page.</p>
+        <div id="mouse">
+            Click in this box.
+            <div id="mouseClick"></div>
+        </div>
 
-    <p>Let's look at our square-to-circle animation from last project. It was already event driven, so most of the work
-        has already been done. This time though, instead of on mouseover and mouseoff, I set it up using a touch event.
-        I'm also using the event listener to drive the event.</p>
-    <div style="height: 300px;margin: 20px auto">
-        <div id="square" class="square-to-circle"></div>
-    </div>
+        <p>Let's look at our square-to-circle animation from last project. It was already event driven, so most of the
+            work has already been done. It starts automatically thanks to onLoad. This time though, instead of on
+            mouseover and mouseoff, I set it up using a touch event. Like the circle above, the only way to trigger the
+            event is with a touch device.</p>
+        <div style="height: 300px;margin: 20px auto">
+            <div id="square" class="square-to-circle"></div>
+        </div>
 
 
 </main>

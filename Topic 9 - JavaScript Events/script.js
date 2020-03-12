@@ -5,7 +5,6 @@ window.onload = function () {
     document.getElementById("square").style.animationPlayState = "running"
 
     document.getElementById("square").addEventListener("touchstart", function () {
-        event.preventDefault();
         if (document.getElementById("square").style.animationPlayState === "running") {
             document.getElementById("square").style.animationPlayState = "paused"
         } else {
@@ -13,10 +12,9 @@ window.onload = function () {
         }
     });
 
-    document.getElementById("mouse").onclick = function () {
-        event.preventDefault();
-        let x = event.clientX;
-        let y = event.clientY;
+    document.getElementById("mouse").onclick = function (e) {
+        let x = e.clientX;
+        let y = e.clientY;
         document.getElementById("mouseClick").innerHTML = "You clicked on position (" + x + "," + y + ").";
     }
 
@@ -28,7 +26,6 @@ window.onload = function () {
     }, 3500);
 
     document.getElementById("linear").addEventListener("touchstart", function () {
-        event.preventDefault();
         document.getElementById("linear").classList.toggle("linear-circle")
     });
 
