@@ -1,0 +1,63 @@
+#square{
+    text-align: center;
+    margin: 75px auto;
+    height: 225px;
+    width: 225px;
+    background-color: azure;
+}
+
+#circle{
+    text-align: center;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: azure;
+    border-radius: 50%;
+    animation-name:second;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#square-to-circle{
+    text-align: center;
+    margin: 75px auto;
+    height: 225px;
+    width: 225px;
+    background-color: azure;
+}
+
+#circle:hover{
+    animation-play-state: paused;
+}
+
+.first:active{
+    animation-name: first;
+    animation-duration: 4s;
+}
+
+.third:hover{
+    animation-name: third;
+    animation-duration: 3s;
+}
+
+@keyframes first {
+    0% {background-color: azure; margin-left: 1%}
+    25% {background-color: black; margin-left: 15%; height: 300px}
+    50% {background-color: azure; margin-left: 50%; width: 300px}
+    75% {background-color: black; margin-left: 75%; height: 400px; width: 400px}
+    100% {background-color: azure; margin-left: 42.5%; height: 225px; width: 225px}
+}
+
+@keyframes second {
+    0% {background-color: azure; margin-left: 1%}
+    100% {background-color: azure; margin-left: 92%}
+}
+
+@keyframes third {
+    0%{background-color: azure}
+    50%{background-color: black; border-radius: 50%}
+    100%{background-color: azure;}
+}
