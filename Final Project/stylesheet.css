@@ -1,7 +1,14 @@
-/* Basic Style */
+.headerClass{
+    font-size: 36px;
+}
+
+header{
+    font-size: 10pt;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
 
 .container {
-    display: block;
     width: 400px;
     margin: 100px auto 0;
 }
@@ -58,7 +65,6 @@ input[type="text"]:focus {
 
 /* New Task */
 label[for='new-task'] {
-    display: block;
     margin: 0 0 20px;
 }
 input#new-task {
@@ -97,4 +103,16 @@ li > .delete:hover {
 #completed-tasks label {
     text-decoration: line-through;
     color: #888;
+}
+
+iframe{
+    height: 350px;
+    width: 350px;
+    transition: transform 2s;
+}
+
+iframe:hover{
+    height: 500px;
+    width: 500px;
+    transform: rotate(360deg);
 }

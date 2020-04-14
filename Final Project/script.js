@@ -82,15 +82,28 @@ window.onload = function () {
         //watches for when the ready state is 4 and status code is 200. Essentially this is a successful response.
         if (this.readyState == 4 && this.status == 200) {
 
-            let parsed = JSON.parse(xhttp.responseText)
-          console.log(parsed);
+            let parsed = JSON.parse(xhttp.responseText);
+            console.log(parsed);
             let stringified = JSON.stringify(parsed);
-          sessionStorage.setItem(sesStorage, stringified);
+            sessionStorage.setItem(sesStorage, stringified);
         }
-        
+
 
     };
     xhttp.open("Get", "https://quotes.rest/qod?category=inspire&language=en", true);
     xhttp.send();
+
+    document.getElementById("hideCompleted").addEventListener("click", function () {
+        let i = document.getElementById("completed-tasks");
+        if (i.style.display === 'none') {
+            i.style.display = 'block';
+        } else {
+            i.style.display = 'none';
+        }
+    });
+
+    let h = document.getElementById("head");
+    h.classList.toggle("headerClass")
+
 
 }
